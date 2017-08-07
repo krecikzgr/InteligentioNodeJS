@@ -16,7 +16,6 @@ const IN_MEMORY_DATA = [
 
 module.exports = {
     getSensors() {
-        console.log(IN_MEMORY_DATA);
         return IN_MEMORY_DATA;
     }
 };

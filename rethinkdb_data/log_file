@@ -78,3 +78,48 @@
 2017-08-07T17:02:10.137967000 2219.572624s info: Table bd552e0f-3433-478c-ae23-763599cfd767: Starting a new Raft election for term 1.
 2017-08-07T17:02:10.138198000 2219.572855s info: Table bd552e0f-3433-478c-ae23-763599cfd767: Added replica on this server.
 2017-08-07T17:02:10.206123000 2219.640781s info: Table bd552e0f-3433-478c-ae23-763599cfd767: This server is Raft leader for term 1. Latest log index is 0.
+2017-08-07T20:53:48.422204000 0.248971s notice: Running rethinkdb 2.3.6 (CLANG 8.1.0 (clang-802.0.42))...
+2017-08-07T20:53:48.428175000 0.254938s notice: Running on Darwin 16.3.0 x86_64
+2017-08-07T20:53:48.428222000 0.254983s notice: Loading data from directory /Users/adrian/Documents/Programowanie/javascript/Inteligentio3/SensorsProvider/rethinkdb_data
+2017-08-07T20:53:48.463088000 0.289850s info: Automatically using cache size of 1132 MB
+2017-08-07T20:53:48.464177000 0.290939s notice: Listening for intracluster connections on port 29015
+2017-08-07T20:53:48.525714000 0.352476s notice: Listening for client driver connections on port 28015
+2017-08-07T20:53:48.525821000 0.352583s notice: Listening for administrative HTTP connections on port 8080
+2017-08-07T20:53:48.525823000 0.352584s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2017-08-07T20:53:48.525824000 0.352585s notice: Listening on driver addresses: 127.0.0.1, ::1
+2017-08-07T20:53:48.525872000 0.352633s notice: Listening on http addresses: 127.0.0.1, ::1
+2017-08-07T20:53:48.525873000 0.352634s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-08-07T20:53:48.525875000 0.352636s notice: Server ready, "Mac_mini_Adrian_local_j6o" 9ec07ea5-49f5-493b-bedc-c9442e429472
+2017-08-07T20:53:49.520721000 1.347514s info: Table b7947777-a717-4051-898c-aa378e6c614b: Starting a new Raft election for term 2.
+2017-08-07T20:53:49.541250000 1.368044s info: Table b7947777-a717-4051-898c-aa378e6c614b: This server is Raft leader for term 2. Latest log index is 28.
+2017-08-07T20:53:49.654016000 1.480809s info: Table bd552e0f-3433-478c-ae23-763599cfd767: Starting a new Raft election for term 2.
+2017-08-07T20:53:49.674956000 1.501750s info: Table bd552e0f-3433-478c-ae23-763599cfd767: This server is Raft leader for term 2. Latest log index is 35.
+2017-08-07T20:53:49.687528000 1.514322s info: Table 1abb55d5-e2c6-4911-9ada-793751a8a02c: Starting a new Raft election for term 2.
+2017-08-07T20:53:49.723043000 1.549837s info: Table 1abb55d5-e2c6-4911-9ada-793751a8a02c: This server is Raft leader for term 2. Latest log index is 38.
+2017-08-07T20:53:50.390290000 2.217084s info: Table 7db7b83d-2f51-45ad-bab8-6e41daca2efb: Starting a new Raft election for term 2.
+2017-08-07T20:53:50.403421000 2.230215s info: Table 7db7b83d-2f51-45ad-bab8-6e41daca2efb: This server is Raft leader for term 2. Latest log index is 88.
+2017-08-07T20:53:50.463372000 2.290166s info: Table 08686b76-4068-4e42-9e3f-f545eb35655e: Starting a new Raft election for term 2.
+2017-08-07T20:53:50.481119000 2.307913s info: Table 08686b76-4068-4e42-9e3f-f545eb35655e: This server is Raft leader for term 2. Latest log index is 40.
+2017-08-07T20:54:24.218664000 36.045998s info: Table c0e98908-fb0c-4b40-9834-5f07723dfcef: Starting a new Raft election for term 1.
+2017-08-07T20:54:24.218981000 36.046315s info: Table c0e98908-fb0c-4b40-9834-5f07723dfcef: Added replica on this server.
+2017-08-07T20:54:24.238666000 36.065999s info: Table c0e98908-fb0c-4b40-9834-5f07723dfcef: This server is Raft leader for term 1. Latest log index is 0.
+2017-08-07T20:56:55.242772000 187.072492s info: Table cce45fe9-398a-4ef1-bf30-4be252314504: Starting a new Raft election for term 1.
+2017-08-07T20:56:55.243095000 187.072814s info: Table cce45fe9-398a-4ef1-bf30-4be252314504: Added replica on this server.
+2017-08-07T20:56:55.261972000 187.091692s info: Table cce45fe9-398a-4ef1-bf30-4be252314504: This server is Raft leader for term 1. Latest log index is 0.
+2017-08-07T21:09:07.924584000 919.765916s notice: Removing file /Users/adrian/Documents/Programowanie/javascript/Inteligentio3/SensorsProvider/rethinkdb_data/08686b76-4068-4e42-9e3f-f545eb35655e
+2017-08-07T21:09:07.924592000 919.765923s info: Table 08686b76-4068-4e42-9e3f-f545eb35655e: Deleted the table.
+2017-08-07T21:09:07.943115000 919.784446s notice: Removing file /Users/adrian/Documents/Programowanie/javascript/Inteligentio3/SensorsProvider/rethinkdb_data/1abb55d5-e2c6-4911-9ada-793751a8a02c
+2017-08-07T21:09:07.943123000 919.784454s info: Table 1abb55d5-e2c6-4911-9ada-793751a8a02c: Deleted the table.
+2017-08-07T21:09:07.961989000 919.803320s notice: Removing file /Users/adrian/Documents/Programowanie/javascript/Inteligentio3/SensorsProvider/rethinkdb_data/7db7b83d-2f51-45ad-bab8-6e41daca2efb
+2017-08-07T21:09:07.961999000 919.803331s info: Table 7db7b83d-2f51-45ad-bab8-6e41daca2efb: Deleted the table.
+2017-08-07T21:09:07.984515000 919.825847s notice: Removing file /Users/adrian/Documents/Programowanie/javascript/Inteligentio3/SensorsProvider/rethinkdb_data/b7947777-a717-4051-898c-aa378e6c614b
+2017-08-07T21:09:07.984524000 919.825855s info: Table b7947777-a717-4051-898c-aa378e6c614b: Deleted the table.
+2017-08-07T21:09:08.004155000 919.845487s notice: Removing file /Users/adrian/Documents/Programowanie/javascript/Inteligentio3/SensorsProvider/rethinkdb_data/bd552e0f-3433-478c-ae23-763599cfd767
+2017-08-07T21:09:08.004164000 919.845495s info: Table bd552e0f-3433-478c-ae23-763599cfd767: Deleted the table.
+2017-08-07T21:09:08.031284000 919.872615s notice: Removing file /Users/adrian/Documents/Programowanie/javascript/Inteligentio3/SensorsProvider/rethinkdb_data/c0e98908-fb0c-4b40-9834-5f07723dfcef
+2017-08-07T21:09:08.031293000 919.872624s info: Table c0e98908-fb0c-4b40-9834-5f07723dfcef: Deleted the table.
+2017-08-07T21:09:08.057442000 919.898774s notice: Removing file /Users/adrian/Documents/Programowanie/javascript/Inteligentio3/SensorsProvider/rethinkdb_data/cce45fe9-398a-4ef1-bf30-4be252314504
+2017-08-07T21:09:08.057453000 919.898785s info: Table cce45fe9-398a-4ef1-bf30-4be252314504: Deleted the table.
+2017-08-07T21:10:04.009421000 975.851643s info: Table c558607a-5a27-4afa-8f95-62dd3f2a3685: Starting a new Raft election for term 1.
+2017-08-07T21:10:04.009649000 975.851872s info: Table c558607a-5a27-4afa-8f95-62dd3f2a3685: Added replica on this server.
+2017-08-07T21:10:04.026225000 975.868448s info: Table c558607a-5a27-4afa-8f95-62dd3f2a3685: This server is Raft leader for term 1. Latest log index is 0.

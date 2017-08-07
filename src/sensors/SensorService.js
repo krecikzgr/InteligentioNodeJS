@@ -12,33 +12,18 @@ const getSensors = async (start, size) => {
   const dbResult = await r.table(TABLE_NAME).run(connection);
  return dbResult.toArray();
 };
-
-// const getTweet = id => {
-//     const tweetId = parseInt(id, 10);
-
-//     const tweets = fakeDataBase.getTweetsTable()
-//     tweets.find(a.id == tweetId);
-//     //TODO return a single tweet by it's tweetId
-//     //- Hint: use the array.find-function
-//     return null;
-// };
-
-// const countTweets = () => {
-//     //TODO: return the count of all tweets (TIP: use array.length)
-//     return fakeDataBase.getTweetsTable.length;
-// };
-
-// const createTweet = tweet => {
-//     //TODO
-//     tweet.id = fakeDataBase.getTweetsTable().length+1;
-//     fakeDataBase.getTweetsTable().push(tweet);
-//     //- add the tweet to the database (Hint: use array.push)
-//     //- set the id of a tweet BEFORE adding it
-//     //- return the created tweet
-//     return tweet;
-// };
-
+const createSensor = async sensor => {
+    const connection = database.getConnection();
+    const result = await r.table(TABLE_NAME).insert(Object.assign(sensor, {createdAt: new Date().getTime()})).run(connection);
+    return r.table(TABLE_NAME).get(result.generated_keys[0]).run(connection);
+};
+const getSensor = id => {
+    const connection = dataBase.getConnection();
+    return r.table(TABLE_NAME).get(id).run(connection);
+};
 
 module.exports = {
-    getSensors
+    getSensors,
+    createSensor,
+    getSensor
 };

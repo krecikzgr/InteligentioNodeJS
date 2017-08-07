@@ -6,7 +6,7 @@ const config = require('../config/Config');
 const testData = require('./DatabaseProvider');
 //const eventEmitter = require('../server/Events');
 
-const SENSORS_TABLE = 'sensorsssssss';
+const SENSORS_TABLE = 'senso';
 
 let connection = null;
 

@@ -8,8 +8,6 @@ const sensorsService = require("./SensorService");
 
 module.exports = server => {
     server.get('\sensors', async (req, res, next) => {
-        //TODO 
-
         const page =  parseInt(req.params.page);
         const size = parseInt(req.params.size);   
         const start = (page - 1) * size;
@@ -17,4 +15,11 @@ module.exports = server => {
         res.send(allSensors);
         next();
     });
+    server.post('sensor', async (req, res, next) => {
+            const sensor = await sensorsService.createSensor(req.body);
+            res.send(201, sensor);
+            next();
+        }
+    );
+
 };
