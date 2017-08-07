@@ -47,3 +47,34 @@
 2017-08-06T23:01:55.083136000 0.032990s notice: Listening on http addresses: 127.0.0.1, ::1
 2017-08-06T23:01:55.083139000 0.032994s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
 2017-08-06T23:01:55.083143000 0.032997s notice: Server ready, "Mac_mini_Adrian_local_j6o" 9ec07ea5-49f5-493b-bedc-c9442e429472
+2017-08-06T23:44:29.684695000 0.049393s notice: Recursively removing directory /Users/adriankaleta/Programowanie/javascript/Inteligentio/InteligentioNodeJS/rethinkdb_data/tmp
+2017-08-06T23:44:29.687606000 0.052311s notice: Running rethinkdb 2.3.5 (CLANG 8.0.0 (clang-800.0.38))...
+2017-08-06T23:44:29.694882000 0.059581s notice: Running on Darwin 16.1.0 x86_64
+2017-08-06T23:44:29.694954000 0.059652s notice: Loading data from directory /Users/adriankaleta/Programowanie/javascript/Inteligentio/InteligentioNodeJS/rethinkdb_data
+2017-08-06T23:44:29.785349000 0.150047s info: Automatically using cache size of 100 MB
+2017-08-06T23:44:29.785384000 0.150081s warn: Cache size does not leave much memory for server and query overhead (available memory: 654 MB).
+2017-08-06T23:44:29.785398000 0.150096s warn: Cache size is very low and may impact performance.
+2017-08-06T23:44:29.787428000 0.152126s notice: Listening for intracluster connections on port 29015
+2017-08-06T23:44:29.790951000 0.155649s notice: Listening for client driver connections on port 28015
+2017-08-06T23:44:29.791223000 0.155921s notice: Listening for administrative HTTP connections on port 8080
+2017-08-06T23:44:29.791229000 0.155927s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2017-08-06T23:44:29.791238000 0.155936s notice: Listening on driver addresses: 127.0.0.1, ::1
+2017-08-06T23:44:29.791242000 0.155939s notice: Listening on http addresses: 127.0.0.1, ::1
+2017-08-06T23:44:29.791250000 0.155947s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-08-06T23:44:29.791258000 0.155955s notice: Server ready, "Mac_mini_Adrian_local_j6o" 9ec07ea5-49f5-493b-bedc-c9442e429472
+2017-08-06T23:44:30.897195000 1.261893s notice: A newer version of the RethinkDB server is available: 2.3.6. You can read the changelog at <https://github.com/rethinkdb/rethinkdb/releases>.
+2017-08-06T23:44:36.231334000 6.595800s info: Table 7db7b83d-2f51-45ad-bab8-6e41daca2efb: Starting a new Raft election for term 1.
+2017-08-06T23:44:36.233485000 6.597951s info: Table 7db7b83d-2f51-45ad-bab8-6e41daca2efb: Added replica on this server.
+2017-08-06T23:44:36.305926000 6.670392s info: Table 7db7b83d-2f51-45ad-bab8-6e41daca2efb: This server is Raft leader for term 1. Latest log index is 0.
+2017-08-07T00:09:24.349225000 1494.654963s info: Table 1abb55d5-e2c6-4911-9ada-793751a8a02c: Starting a new Raft election for term 1.
+2017-08-07T00:09:24.350691000 1494.656430s info: Table 1abb55d5-e2c6-4911-9ada-793751a8a02c: Added replica on this server.
+2017-08-07T00:09:24.426466000 1494.732205s info: Table 1abb55d5-e2c6-4911-9ada-793751a8a02c: This server is Raft leader for term 1. Latest log index is 0.
+2017-08-07T00:10:42.528599000 1572.831320s info: Table 08686b76-4068-4e42-9e3f-f545eb35655e: Starting a new Raft election for term 1.
+2017-08-07T00:10:42.529020000 1572.831741s info: Table 08686b76-4068-4e42-9e3f-f545eb35655e: Added replica on this server.
+2017-08-07T00:10:42.597605000 1572.900325s info: Table 08686b76-4068-4e42-9e3f-f545eb35655e: This server is Raft leader for term 1. Latest log index is 0.
+2017-08-07T17:00:21.056521000 2110.495481s info: Table b7947777-a717-4051-898c-aa378e6c614b: Starting a new Raft election for term 1.
+2017-08-07T17:00:21.057266000 2110.496221s info: Table b7947777-a717-4051-898c-aa378e6c614b: Added replica on this server.
+2017-08-07T17:00:21.137770000 2110.576725s info: Table b7947777-a717-4051-898c-aa378e6c614b: This server is Raft leader for term 1. Latest log index is 0.
+2017-08-07T17:02:10.137967000 2219.572624s info: Table bd552e0f-3433-478c-ae23-763599cfd767: Starting a new Raft election for term 1.
+2017-08-07T17:02:10.138198000 2219.572855s info: Table bd552e0f-3433-478c-ae23-763599cfd767: Added replica on this server.
+2017-08-07T17:02:10.206123000 2219.640781s info: Table bd552e0f-3433-478c-ae23-763599cfd767: This server is Raft leader for term 1. Latest log index is 0.

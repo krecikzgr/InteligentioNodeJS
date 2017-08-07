@@ -3,10 +3,10 @@
  */
 const rethink = require('rethinkdb');
 const config = require('../config/Config');
-const testData = require('./FakeDatabase');
-const eventEmitter = require('../server/Events');
+const testData = require('./DatabaseProvider');
+//const eventEmitter = require('../server/Events');
 
-const SENSORS_TABLE = 'sensors';
+const SENSORS_TABLE = 'sensorsssssss';
 
 let connection = null;
 
@@ -27,7 +27,11 @@ const createTables = async () => {
 
         await rethink.db(config.dbName).tableCreate(SENSORS_TABLE).run(connection);
         await rethink.table(SENSORS_TABLE).wait().run(connection);
-
+        await rethink.table(SENSORS_TABLE).insert(testData.getSensors().map(sensor => {
+            const dbSensor = Object.assign({}, sensor);
+            delete dbSendor.id;
+            return dbSensor;
+        })).run(connection);
         console.log('Tweets table and test data ready.');
     } else {
         await rethink.table(SENSORS_TABLE).wait().run(connection);
@@ -36,7 +40,7 @@ const createTables = async () => {
 
 const initDBStream = () => {
     rethink.table(SENSORS_TABLE).changes().run(connection, (err, cursor) => {
-        cursor.each((error, newData) => eventEmitter.emit('newData', newData.new_val));
+       // cursor.each((error, newData) => eventEmitter.emit('newData', newData.new_val));
     });
 };
 

@@ -1,24 +1,16 @@
-/**
- * @author Sven Koelpin
- */
 
 
 //const databaseProvider= require('../db/DatabaseProvider');
-//const r = require('rethinkdb');
+
 const database = require('../db/Database');
-const TABLE_NAME = database.getTweetsTable();
+const r = require('rethinkdb');
+const TABLE_NAME = database.getSensorsTable();
 
 
-const getSensors = (start, size) => {
-    //const connection = database.getConnection();
-  //  const dbResult = await r.table(TABLE_NAME).run(connection);
-    // const sensors = database.getSensors();
-    // const sortedSensors = sensors.sort((a,b)=>a.id>b.id).slice(start*size+size);
-
-    //TODO: Return all tweets (use the fakeDataBase)
-    //- sorted by id (desc) (Hint: use the array.sort-function, e.g. [1,2,3].sort((a,b)=>a<b))
-    //- use the given start + size parameters to create a sub-array (Hint: use the array.slice-function)
-    return sortedSensors;
+const getSensors = async (start, size) => {
+  const connection = database.getConnection();
+  const dbResult = await r.table(TABLE_NAME).run(connection);
+ return dbResult.toArray();
 };
 
 // const getTweet = id => {
