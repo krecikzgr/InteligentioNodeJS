@@ -2,7 +2,7 @@
  * @author Sven Koelpin
  */
 
-const sensorsService = require("./SensorService");
+const sensorsService = require("../db/DatabaseProvider");
 
 
 
