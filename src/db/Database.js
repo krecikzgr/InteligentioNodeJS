@@ -1,21 +1,22 @@
 /**
  * @author Sven Koelpin
  */
-const rethink = require('rethinkdb');
+var mongo = require('mongodb').MongoClient;
 const config = require('../config/Config');
 const testData = require('./DatabaseProvider');
 //const eventEmitter = require('../server/Events');
 
 const SENSORS_TABLE = 'senso';
-
+var url = "mongodb://localhost:27017/mydb";
 let connection = null;
 
 const createDataBase = async () => {
-    const dbList = await rethink.dbList().run(connection);
-    if (!dbList.find(db => db === config.dbName)) {
-        console.log('Database not present. Creating it.');
-        await rethink.dbCreate(config.dbName).run(connection);
-    }
+    db =  await  mongo.connect(url, function(err, db) {
+        if (err) console.log(err);
+        console.log("Database created!");
+        db.close();
+      });
+      console.log("After everything");
 };
 
 const createTables = async () => {
@@ -46,12 +47,12 @@ const initDBStream = () => {
 
 const init = async () => {
     if (connection === null) {
-        connection = await rethink.connect({
-            host: config.dbHost,
-            port: config.dbPort,
-            db: config.dbName,
-            password: config.dbPass
-        });
+        // connection = await rethink.connect({
+        //     host: config.dbHost,
+        //     port: config.dbPort,
+        //     db: config.dbName,
+        //     password: config.dbPass
+        // });
 
         await createDataBase();
         await createTables();

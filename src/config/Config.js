@@ -2,8 +2,9 @@ module.exports = {
     logPath: null,
     dbPass: '',
     dbHost: 'localhost',
-    dbPort: 28015,
+    dbPort: 27018,
     dbName: 'Inteligentio',
     origins: ['*'],
-    jwtSecret: 'mySecret'
+    jwtSecret: 'mySecret',
+    url: "mongodb://localhost:27018/inteligentio"
 };
