@@ -14,7 +14,7 @@
   "dependencies": {
     "bunyan": "^1.8.8",
     "jsonwebtoken": "^7.4.1",
-    "mongodb": "^3.0.5",
+    "mongoose": "^5.0.12",
     "restify": "^4.3.0",
     "restify-cors-middleware": "0.0.8",
     "ws": "^3.0.0",
